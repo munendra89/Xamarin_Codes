@@ -6,3 +6,4 @@ MyTube/MyTube/MyTube.iOS/bin/
 MyTube/MyTube/MyTube.iOS/obj/
 MyTube/MyTube/MyTube.UWP/bin/
 MyTube/MyTube/MyTube.UWP/obj/
+*/.vs
