@@ -1,3 +1,9 @@
-*/bin/
-*/obj/
+*/MyTube/bin/
+*/MyTube/obj/
+*/MyTube.Android/bin/
+*/MyTube.Android/obj/
+*/MyTube.iOS/bin/
+*/MyTube.iOS/obj/
+*/MyTube.UWP/bin/
+*/MyTube.UWP/ob
 */.vs
