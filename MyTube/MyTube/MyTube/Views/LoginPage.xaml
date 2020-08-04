@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyTube.Views.LoginPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="LightBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".5*"/>
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Row="0" Grid.Column="0" 
+                         Grid.RowSpan="2" Grid.ColumnSpan="3" 
+                         BackgroundColor="AliceBlue"
+                         VerticalOptions="Center"
+                         Margin="20,0,20,20">
+                <Label Text="Welcome to MyTube " Margin="0,20,0,40" FontSize="Large" 
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand" />
+                <Button Text ="Login With Google" Margin="20,20" VerticalOptions="EndAndExpand" Command="{Binding GoogleClickedCommand}"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

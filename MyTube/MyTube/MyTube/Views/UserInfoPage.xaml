@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyTube.Views.UserInfoPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="AliceBlue" Spacing="10">
+            <Label Text="Account" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Large" Margin="0,30,0,0"/>
+            <BoxView BackgroundColor="Black" HeightRequest="1"/>
+            <StackLayout Margin="10,40,5,40" Orientation="Horizontal">
+                <Image Source="{Binding UserImageUrl}" Margin="5,0,0,0" HorizontalOptions="Start" HeightRequest="40" WidthRequest="40"/>
+                <Label Text="{Binding UserName}" TextColor="Black" FontSize="Large" Margin="15,0,0,0"/>
+            </StackLayout>
+            <Button Text=" Close" Command="{Binding PageClose}"  BackgroundColor="CadetBlue" Margin="30,30"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
