@@ -1,0 +1,1 @@
+This is the sample application for implementing Google Auth, YouTubeDataApi, Google Api .Net client libraray. Videos details were fetched using youtubeData APi and played within the XAMARIN FORM WEB VIEW.
