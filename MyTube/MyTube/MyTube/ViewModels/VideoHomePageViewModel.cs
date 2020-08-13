@@ -1,19 +1,10 @@
-﻿using Google.Apis.Auth.OAuth2;
-using Google.Apis.Services;
-using Google.Apis.Util;
-using Google.Apis.YouTube.v3;
-using Google.Apis.YouTube.v3.Data;
-using MyTube.AppConstants;
+﻿using Google.Apis.YouTube.v3.Data;
 using MyTube.DataModel;
 using MyTube.Services;
 using MyTube.Views;
-using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace MyTube.ViewModels
 {
@@ -41,7 +32,6 @@ namespace MyTube.ViewModels
             {
                 var snippet = item.Snippet;
                 var statistics = item.Statistics;
-
                 var vdItem = new VideoItem
                 {
                     Title = snippet.Title,
@@ -54,19 +44,15 @@ namespace MyTube.ViewModels
                     HighThumbnailUrl = snippet?.Thumbnails?.High?.Url,
                     StandardThumbnailUrl = snippet?.Thumbnails?.Standard?.Url,
                     MaxResThumbnailUrl = snippet?.Thumbnails?.Maxres?.Url,
-                    MaxResThumbnailHeight = snippet?.Thumbnails?.Maxres?.Height,
-
                     ViewCount = (int?)(statistics?.ViewCount),
                     LikeCount = (int?)(statistics?.LikeCount),
                     DislikeCount = (int?)statistics?.DislikeCount,
-                    FavoriteCount = (int?)statistics?.FavoriteCount,
                     CommentCount = (int?)statistics?.CommentCount,
                     Player = item.Player
                 };
 
                 videoItemList.Add(vdItem);
             }
-
             return videoItemList;
         }
 

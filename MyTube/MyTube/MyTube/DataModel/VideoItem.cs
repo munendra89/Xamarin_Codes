@@ -1,7 +1,4 @@
 ﻿using Google.Apis.YouTube.v3.Data;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MyTube.DataModel
 {
@@ -26,8 +23,6 @@ namespace MyTube.DataModel
 
         public string MaxResThumbnailUrl { get; set; }
 
-        public double? MaxResThumbnailHeight { get; set; }
-
         public string PublishedAt { get; set; }
 
         public int? ViewCount { get; set; }
@@ -36,11 +31,7 @@ namespace MyTube.DataModel
 
         public int? DislikeCount { get; set; }
 
-        public int? FavoriteCount { get; set; }
-
         public int? CommentCount { get; set; }
-
-        public List<string> Tags { get; set; }
 
         public VideoPlayer Player { get; set; }
     }

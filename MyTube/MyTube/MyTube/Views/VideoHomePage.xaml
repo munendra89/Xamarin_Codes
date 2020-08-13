@@ -61,11 +61,11 @@
                                         <StackLayout Orientation="Horizontal">
                                             <Label Text="{Binding ChannelTitle, StringFormat='{0:n0} .'}" TextColor="Maroon" FontSize="12"/>
                                             <Label Text="{Binding ViewCount, StringFormat='{0:n0} views .'}" 
-                                                   TextColor="#0D47A1" FontSize="12"/>
+                                                   TextColor="Black" FontSize="12"/>
                                             <Label Text="{Binding LikeCount, StringFormat='{0:n0} likes .'}" 
-                                                   TextColor="#2196F3" FontSize="12"/>
+                                                   TextColor="Black" FontSize="12"/>
                                             <Label Text="{Binding DislikeCount, StringFormat='{0:n0} dislikes .'}" 
-                                                   TextColor="#0D47A1" FontSize="12"/>
+                                                   TextColor="Black" FontSize="12"/>
                                         </StackLayout>
                                     </StackLayout>
                                 </Grid>
